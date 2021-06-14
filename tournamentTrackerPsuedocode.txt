@@ -1,0 +1,34 @@
+start program
+	display title
+	ask for input of the number participants desired
+	display that slots are ready
+	
+Main menu
+	loop for menu where it goes back to menu after a successful step
+	until they decide to use exit option and say y for yes
+	
+		display title and options
+		ask user to select desired option
+			if sign up
+				ask for name and preferred slot position
+				use preferred slot position -1 to get index position in array
+				loop through list using desired slot position and name
+				check and alert user if slot is already taken 
+				otherwise let them they signed up successful
+			if cancel sign up
+				ask for position number and name
+				position - 1 to get index in array
+				loop through list to see if number and name match
+				if name and position do not match up let them know
+				ask again until they have a match and let them know it succeeded in removing player
+			if viewing participants
+				ask for position number
+				use index +1 to display position number with the player names
+				display position of that player (and the 5 slots before and after?)
+			exit
+				ask if they are sure
+				have them input y or n
+				exit program
+
+
+				
